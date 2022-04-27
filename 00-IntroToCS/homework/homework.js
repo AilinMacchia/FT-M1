@@ -3,9 +3,9 @@
 function BinarioADecimal(num) {
   // tu codigo aca
   // algo
-  let reves= num.split('').reverse().join('') ;
+  var reves= num.split('').reverse().join('') ;
   var suma=0;
-  for(let i=0; i<reves.length; i++){
+  for(var i=0; i<reves.length; i++){
   	suma=suma + reves[i] * 2**i;
   }
   return suma;
@@ -13,9 +13,9 @@ function BinarioADecimal(num) {
 
 function DecimalABinario(num) {
   // tu codigo aca
-  let binario=[]
+  var binario=[]
   while (num !=0){
-  	let bin=num%2;
+  	var bin=num%2;
   	num= Math.trunc(num/2);
   	binario.push(bin)
   }
